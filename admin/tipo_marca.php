@@ -15,7 +15,7 @@ $inventarioMarca = new InventarioMarca();
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>MiniMarket</title>
+  <title>FoodApp</title>
 
   <!-- Custom fonts for this template -->
   <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -181,7 +181,7 @@ $inventarioMarca = new InventarioMarca();
   <footer class="sticky-footer bg-white">
     <div class="container my-auto">
       <div class="copyright text-center my-auto">
-        <span>Copyright &copy; MiniMarket 2020</span>
+        <span>Copyright &copy; FoodApp 2020</span>
       </div>
     </div>
   </footer>

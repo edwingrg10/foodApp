@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>MiniMarket</title>
+  <title>FoodApp</title>
 
   <!-- Custom fonts for this template-->
   <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -25,7 +25,7 @@
     <div class="sidebar-brand-icon rotate-n-15">
       <i class="fas fa-store"></i>
     </div>
-    <div class="sidebar-brand-text mx-2">MiniMarket<sup>App</sup></div>
+    <div class="sidebar-brand-text mx-2">Food<sup>App</sup></div>
   </a>
 
   <hr class="sidebar-divider my-0">
@@ -50,9 +50,9 @@
     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
       <div class="bg-white py-2 collapse-inner rounded">
         <h6 class="collapse-header">Parametrizaciones</h6>
-        <a class="collapse-item" href="http://localhost/miniMarket/admin/tipo_establecimiento.php">Tipo Establecimientos</a>
-        <a class="collapse-item" href="http://localhost/miniMarket/admin/tipo_producto.php">Tipo Producto</a>
-        <a class="collapse-item" href="http://localhost/miniMarket/admin/tipo_marca.php">Marca</a>
+        <a class="collapse-item" href="http://localhost/FoodApp/admin/tipo_establecimiento.php">Tipo Establecimientos</a>
+        <a class="collapse-item" href="http://localhost/FoodApp/admin/tipo_producto.php">Tipo Producto</a>
+        <a class="collapse-item" href="http://localhost/FoodApp/admin/tipo_marca.php">Marca</a>
         <!--<a class="collapse-item" href="perfil.php">Perfil</a>-->
       </div>
     </div>

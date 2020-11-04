@@ -18,7 +18,7 @@ $numfilas = mysqli_num_rows($usuarios);
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>MiniMarket</title>
+  <title>FoodApp</title>
 
   <!-- Custom fonts for this template-->
   <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
