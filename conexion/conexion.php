@@ -1,6 +1,6 @@
 <!-- Conexión BD -->
 <?php
-    $conn = mysqli_connect("localhost", "root", "", "minimarketapp");
+    $conn = mysqli_connect("localhost", "root", "", "food_app");
     $conn -> set_charset("utf8");
 
     // Existe un error o fallo en la conexión
@@ -16,7 +16,7 @@
 
 class Db {
     public static function conectar() {
-        $pdo = new PDO('mysql:host=localhost;dbname=minimarketapp;charset=utf8','root','');
+        $pdo = new PDO('mysql:host=localhost;dbname=food_app;charset=utf8','root','');
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         return $pdo;
     }
