@@ -4,7 +4,7 @@
 
 $modelo = new Db();
 $conexion = $modelo->conectar();
-$sentencia =  "SELECT * FROM usuario where cod_perfil = 2";
+$sentencia =  "SELECT * FROM producto where estado = 1";
 $resultado = $conexion->prepare($sentencia);
 $resultado->execute();
 $lista = $resultado->fetchAll(PDO::FETCH_ASSOC);
@@ -51,7 +51,7 @@ $lista = $resultado->fetchAll(PDO::FETCH_ASSOC);
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li class="active"><a href="home.php">Inicio</a></li>
-          <li><a href="#restaurantes">Restaurantes</a></li>
+          <li><a href="#restaurantes">Productos</a></li>
           <li><a>Edwin Garzón</a></li>
 
         </ul>
@@ -97,7 +97,7 @@ $lista = $resultado->fetchAll(PDO::FETCH_ASSOC);
 
         <div class="section-title">
           <h2> <span>Nuestros</span></h2>
-          <p>Restaurantes</p>
+          <p>Productos</p>
         </div>
 
         <div class="row">
@@ -108,9 +108,9 @@ $lista = $resultado->fetchAll(PDO::FETCH_ASSOC);
 
             <div class="card" style="width: 23rem;">
               <div class="card-body">
-                <b class="card-title"><?php echo $dato["primer_nombre"] ?> </b><br><br>
-                <p class="card-text">Es un restaurante ubicado en <?php echo $dato["direccion"] ?>, su número celular es <?php echo $dato["celular"] ?>, su teléfono es <?php echo $dato["telefono"] ?>, su fecha de fundación es <?php echo $dato["fecha_nacimiento"] ?> y su correo eléctronico es <?php echo $dato["correo"] ?>.</p>
-                <a href="product_list.php" class="btn btn-primary">Ver sus productos</a>
+                <b class="card-title"><?php echo $dato["desc_producto"] ?> </b><br><br>
+                <p class="card-text">Precio $ <?php echo $dato["precio"] ?> </p>
+                <a href="product_list.php" class="btn btn-primary">Agregar al carrito</a>
               </div>
             </div>
 
