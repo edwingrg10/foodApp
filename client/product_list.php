@@ -51,9 +51,12 @@ $lista = $resultado->fetchAll(PDO::FETCH_ASSOC);
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li class="active"><a href="home.php">Inicio</a></li>
-          <li><a href="#restaurantes">Productos</a></li>
-          <li><a>Edwin Garzón</a></li>
-
+          <li><a href="#productos">Productos</a></li>
+          <li class="nav-item dropdown no-arrow">
+            <a href="../login.html">
+              <span>Cerrar Sesión</span>
+            </a>
+          </li>
         </ul>
       </nav><!-- .nav-menu -->
 
@@ -78,7 +81,7 @@ $lista = $resultado->fetchAll(PDO::FETCH_ASSOC);
                   sabores exclusivos a sus comensales, con ingredientes importados, artesanales, recetas tradicionales o
                   con variaciones que le den un mejor sabor.</p>
                 <div>
-                  <a href="#restaurantes" class="btn-menu animate__animated animate__fadeInUp scrollto">Nuestros Restaurantes</a>
+                  <a href="#productos" class="btn-menu animate__animated animate__fadeInUp scrollto">Nuestros Productos</a>
                 </div>
               </div>
             </div>
@@ -110,7 +113,7 @@ $lista = $resultado->fetchAll(PDO::FETCH_ASSOC);
               <div class="card-body">
                 <b class="card-title"><?php echo $dato["desc_producto"] ?> </b><br><br>
                 <p class="card-text">Precio $ <?php echo $dato["precio"] ?> </p>
-                <a href="product_list.php" class="btn btn-primary">Agregar al carrito</a>
+                <a href="#productos" class="btn btn-primary">Agregar al carrito</a>
               </div>
             </div>
 

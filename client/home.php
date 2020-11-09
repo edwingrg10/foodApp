@@ -52,8 +52,11 @@ $lista = $resultado->fetchAll(PDO::FETCH_ASSOC);
         <ul>
           <li class="active"><a href="home.php">Inicio</a></li>
           <li><a href="#restaurantes">Restaurantes</a></li>
-          <li><a>Edwin Garzón</a></li>
-
+          <li class="nav-item dropdown no-arrow">
+            <a href="../login.html">
+              <span>Cerrar Sesión</span>
+            </a>
+          </li>
         </ul>
       </nav><!-- .nav-menu -->
 
