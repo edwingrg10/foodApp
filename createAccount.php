@@ -39,7 +39,7 @@
 		if ($contar == 1) {
 			echo '<script type="text/javascript">
 				alert("Este correo ya esta registrado en FoodApp.");
-				window.location.href="index.php";
+				window.location.href="crear_cuenta.php";
 				</script>';
 		} else {
 
@@ -71,7 +71,7 @@
 			if (mysqli_query($conn, $query)) {
 				echo '<script type="text/javascript">
 		alert("Su cuenta ha sido creada con exito. BIENVENIDO a FoodApp");
-		window.location.href="index.php";
+		window.location.href="login.html";
 		</script>';
 			} else {
 				echo "Error: " . $query . "<br>" . mysqli_error($conn);

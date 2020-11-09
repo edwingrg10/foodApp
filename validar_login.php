@@ -57,7 +57,7 @@
 				} else if ($row['cod_perfil'] == 2) {
 					header('location:restaurant/home.php');
 				} else if ($row['cod_perfil'] == 3) {
-					header('location:Index.html');
+					header('location:client/home.php');
 				}
 			}
 		} else {
