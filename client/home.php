@@ -112,6 +112,7 @@ $lista = $resultado->fetchAll(PDO::FETCH_ASSOC);
             <div class="card" style="width: 23rem;">
               <div class="card-body">
                 <b class="card-title"><?php echo $dato["primer_nombre"] ?> </b><br><br>
+                <img src="images/establishment.png">
                 <p class="card-text">Es un restaurante ubicado en <?php echo $dato["direccion"] ?>, su número celular es <?php echo $dato["celular"] ?>, su teléfono es <?php echo $dato["telefono"] ?>, su fecha de fundación es <?php echo $dato["fecha_nacimiento"] ?> y su correo eléctronico es <?php echo $dato["correo"] ?>.</p>
                 <a href="product_list.php" class="btn btn-primary">Ver sus productos</a>
               </div>

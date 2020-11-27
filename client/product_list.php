@@ -112,6 +112,7 @@ $lista = $resultado->fetchAll(PDO::FETCH_ASSOC);
             <div class="card" style="width: 23rem;">
               <div class="card-body">
                 <b class="card-title"><?php echo $dato["desc_producto"] ?> </b><br><br>
+                <img src="images/product.png">
                 <p class="card-text">Precio $ <?php echo $dato["precio"] ?> </p>
                 <a href="#productos" class="btn btn-primary">Agregar al carrito</a>
               </div>
