@@ -92,7 +92,7 @@
     
     
     
-  //   header ("location: http://localhost/miniMarket/admin/tipo_producto.php");  
+  //   header ("location: http://localhost/foodapp/admin/tipo_producto.php");  
     
   // }
 
@@ -114,7 +114,7 @@
     
     
     
-  //   header ("location: http://localhost/miniMarket/admin/tipo_producto.php");  
+  //   header ("location: http://localhost/foodapp/admin/tipo_producto.php");  
     
   // }
   //Recibe del formulario la accion 2 que significa borrar
@@ -127,7 +127,7 @@
     //   echo($cod);
     $consultas=new consultas();
     $mensaje=$consultas->borrar_tipo_producto($cod);
-    header ("location: http://localhost/miniMarket/admin/tipo_producto.php");  
+    header ("location: http://localhost/foodapp/admin/tipo_producto.php");  
         
        
     } 
