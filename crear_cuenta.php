@@ -44,7 +44,7 @@
 
                       <?php
                       $conn = mysqli_connect("localhost", "root", "", "food_app");
-                      $sql = "SELECT * FROM perfil";
+                      $sql = "SELECT * FROM perfil where cod_perfil in (2,3)";
                       $result = mysqli_query($conn, $sql);
 
                       ?>
@@ -59,7 +59,7 @@
                           ?>
                         </select>
                       </div>
-                      
+
                       <div class="form-group">
                         <input type="text" class="form-control form-control-user" name="cedula" placeholder="Cedula" required>
                       </div>
