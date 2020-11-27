@@ -42,6 +42,24 @@
                     </div>
                     <form class="user" action="createAccount.php" method="post">
 
+                      <?php
+                      $conn = mysqli_connect("localhost", "root", "", "food_app");
+                      $sql = "SELECT * FROM perfil";
+                      $result = mysqli_query($conn, $sql);
+
+                      ?>
+
+                      <div class="form-group">
+                        <label for="cod_perfil">Perfil</label>
+                        <select class="form-control" id="cod_perfil" name="cod_perfil">
+                          <?php
+                          while ($row = mysqli_fetch_array($result)) {
+                            echo '<option value=' . $row['cod_perfil'] . '>' . $row['descripcion'] . '</option>';
+                          }
+                          ?>
+                        </select>
+                      </div>
+                      
                       <div class="form-group">
                         <input type="text" class="form-control form-control-user" name="cedula" placeholder="Cedula" required>
                       </div>
@@ -85,24 +103,6 @@
 
                       <div class="form-group">
                         <input type="password" class="form-control form-control-user" name="contrasena" placeholder="Contraseña" required>
-                      </div>
-
-                      <?php
-                      $conn = mysqli_connect("localhost", "root", "", "food_app");
-                      $sql = "SELECT * FROM perfil";
-                      $result = mysqli_query($conn, $sql);
-
-                      ?>
-
-                      <div class="form-group">
-                        <label for="cod_perfil">Perfil</label>
-                        <select class="form-control" id="cod_perfil" name="cod_perfil">
-                          <?php
-                          while ($row = mysqli_fetch_array($result)) {
-                            echo '<option value=' . $row['cod_perfil'] . '>' . $row['descripcion'] . '</option>';
-                          }
-                          ?>
-                        </select>
                       </div>
 
                       <div class="button-panel">
